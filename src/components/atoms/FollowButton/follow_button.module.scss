@@ -1,0 +1,17 @@
+.follow_button {
+  border-style: none;
+  cursor: pointer;
+
+  width: 120px;
+  height: 40px;
+  border-radius: 30px;
+  background: #7c816d;
+  color: #eeede3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.followed {
+  background: #eeede3;
+  color: #7c816d;
+  border: 1px solid #7c816d;
+}
