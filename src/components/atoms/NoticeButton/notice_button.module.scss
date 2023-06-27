@@ -1,0 +1,20 @@
+.noticeWrapper {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.notice {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #7c816d;
+  background: #eeede3;
+  color: #7c816d;
+  text-align: center;
+  line-height: 25px;
+}
