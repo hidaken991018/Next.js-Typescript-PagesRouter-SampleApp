@@ -5,12 +5,16 @@
 <img src="doc/image/final_service.png"/>
 </a>
 
+https://www.figma.com/file/uidfvUXMcCISkmaeFNyYk2/Next-Sample?type=design&node-id=0%3A1&mode=design&t=graZE21KhL7JgrPY-1
+
 ## 現状
 
 <a href="https://next-sample-project-theta.vercel.app/" target="_blank" rel="noopener noreferrer">
 
 <img src="doc/image/current_sercvice.png"/>
 </a>
+
+https://next-sample-project-theta.vercel.app/
 
 ## はじめ方
 
