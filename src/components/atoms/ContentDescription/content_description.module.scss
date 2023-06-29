@@ -22,3 +22,9 @@
   font-weight: 400;
   line-height: normal;
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
