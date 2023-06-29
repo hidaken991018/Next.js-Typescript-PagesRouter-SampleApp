@@ -7,7 +7,7 @@ export const Header = () => {
   return (
     <div className={style.header}>
       <ServiceLogo />
-      <NoticeButton noticeCount={3} />
+      <NoticeButton noticeCount={0} />
     </div>
   )
 }

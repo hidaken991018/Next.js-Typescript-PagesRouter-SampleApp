@@ -1,3 +1,4 @@
+import { useState } from "react";
 import style from "./follow_button.module.scss";
 
 type Props = {
@@ -6,9 +7,16 @@ type Props = {
 }
 
 export const FollowButton = (props: Props) => {
+
+  const [isFollowed, setIsFollowed] = useState(props.isFollowed)
+
+  const ClickHandle = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault()
+    setIsFollowed(!isFollowed)
+  }
   return (
-    <button className={`${style.follow_button} ${props.isFollowed && style.followed}`} disabled={props.disabled}>
-      {props.isFollowed ? "フォロー中" : "フォロー"}
+    <button className={`${style.follow_button} ${isFollowed && style.followed}`} onClick={ClickHandle} disabled={props.disabled}>
+      {isFollowed ? "フォロー中" : "フォロー"}
     </button>
   )
 } 

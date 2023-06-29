@@ -10,7 +10,7 @@ export const NoticeButton = (props: props) => {
   const router = useRouter()
   return (
     <div className={style.noticeWrapper} onClick={() => router.push("/notice")}>
-      <div className={style.notice}>{props.noticeCount}</div>
+      {props.noticeCount !== 0 && <div className={style.notice}>{props.noticeCount}</div>}
       <Image src="/assets/icon_notification.png" alt="notice" width={40} height={40} />
     </div>
   )

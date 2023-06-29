@@ -13,19 +13,23 @@ type Props = {
     description: string,
     image: string,
   }
+  onclick: () => void;
 }
 
 export const ContentCard = (props: Props) => {
+  const OpenContentModal = () => {
+    alert('モーダルを開く')
+  }
   return (
     <div className={style.content}>
       <div className={style.content_header}>
-        <TimelineProfile name={props.profile.name} />
+        <TimelineProfile name={props.profile.name} onclick={props.onclick} />
         <FollowButton isFollowed={props.profile.isFollowed} />
       </div>
-      <div className={style.image_wrapper}>
+      <div className={style.image_wrapper} onClick={OpenContentModal}>
         <Image src={props.content.image} alt={props.content.title} width={600} height={260} />
       </div>
-      <div className={style.content_deescription}>
+      <div className={style.content_deescription} onClick={OpenContentModal}>
         <ContentDescription title={props.content.title} description={props.content.description} />
       </div>
     </div>

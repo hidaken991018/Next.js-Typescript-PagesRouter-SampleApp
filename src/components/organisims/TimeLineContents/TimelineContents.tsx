@@ -1,5 +1,6 @@
 import { ContentCard } from "@/components/molecules/ContentCard/ContentCard"
 import style from "./timeline_contents.module.scss"
+import { useRouter } from "next/router"
 
 const CONTENTS = [
   {
@@ -30,10 +31,15 @@ for (let i = 0; i <= 7; i++) {
   GENERATED_CONTENTS = [...GENERATED_CONTENTS, CONTENTS[i % 2 === 0 ? 0 : 1]]
 }
 export const TimelineContents = () => {
+
+  const router = useRouter()
+  const TransUserProfile = (name: string) => {
+    router.push(`/user/${name}`)
+  }
   return (
     <div className={style.timeline_contents}>
       {GENERATED_CONTENTS.map((content: any, index: number) => (
-        <ContentCard key={index} profile={content.profile} content={content.content} />
+        <ContentCard key={index} profile={content.profile} content={content.content} onclick={() => TransUserProfile(content.profile.name)} />
       ))}
     </div>
   )
