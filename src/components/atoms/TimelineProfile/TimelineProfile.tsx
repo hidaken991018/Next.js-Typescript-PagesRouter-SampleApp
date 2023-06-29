@@ -1,11 +1,11 @@
 import Image from "next/image";
-import style from "./tileline_top_profile.module.scss";
+import style from "./tileline_profile.module.scss";
 
 type Props = {
   name: string;
 }
 
-export const TimelineTopProfile = (props: Props) => {
+export const TimelineProfile = (props: Props) => {
   return (
     <div className={style.profile_wrapper}>
       <Image src="/assets/icon_account_circle.png" alt="profile" width={50} height={50} />
