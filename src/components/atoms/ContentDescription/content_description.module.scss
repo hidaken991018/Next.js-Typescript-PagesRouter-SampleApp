@@ -1,0 +1,24 @@
+.title {
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  color: #7c816d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.description {
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+
+  color: #7c816d;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
